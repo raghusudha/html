@@ -2,5 +2,63 @@
     <head>
         <title>Bhilwara Infotech</title>
         <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <style>
+                .mySlides {display:none;}
+                </style>
     </head>
+    <body>
+        <div id="first">
+            <div id="logo">
+                <img src="download.jpg">
+            </div>
+            <div id="text">
+                <h1> BHILWARA INFOTECH</h1>
+            </div>
+        </div>
+        <div id="second">
+            WELCOME TO BHILWARA INFOTECH
+        </div>
+        <div class="slides"></div>
+            
+                <img class="mySlides" src="banner3.jpg">
+                <img class="mySlides" src="banner4.jpg">
+              </div>
+              
+              <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); 
+              }
+              </script>
+                <div id="final">
+                    <div id="div1">
+                        <p>Contact Number<br>
+                        080 4288 6666</p>
+                    </div>
+                    <div id="div2">
+                        Address<br>
+                        Fortune Summit Business Park, No. 244, 1st Floor,
+                         6th Sector, HSR Layout,<br> Silk Board Junction,
+                          Hosur Main Road, Bengaluru, Karnataka 560068
+                    </div>
+                    <div id="div3">
+                        <p>Fax<br>
+                        123456789</p>   
+                    </div>
+                </div>
+            
+       
+
+
+    </body>
 </html>
